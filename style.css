@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #2b3038;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  color: rgb(240, 248, 255, 0.6);
+}
+form {
+  background: #1f1f1f;
+  color: #737373;
+  align-items: center;
+  height: 500px;
+  width: max-content;
+  padding: 20px 30px 0 30px;
+  margin-top: 15px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+.field {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.msg {
+  font-size: 10px;
+  color: red;
+  float: right;
+}
+.place {
+  background: #141414;
+  color: whitesmoke;
+  float: right;
+  height: 25px;
+  border-radius: 6px;
+  border-bottom: 1px solid rgb(46, 129, 71, 0.7);
+  padding: 10px;
+  caret-color: rgb(119, 0, 255);
+}
+.buttons {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  /* margin-bottom: 50px; */
+  width: 100%;
+  text-align: center;
+}
+.create-btn,
+.cancel-btn {
+  background: black;
+  padding: 5px 20px;
+  border: solid rgba(21, 255, 0, 0.5) 2px;
+  margin: 0 10px 10px 10px;
+  border-radius: 20px;
+  color: rgb(240, 248, 255, 0.8);
+  font-size: 16pt;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+.cancel-btn {
+  border: solid rgba(255, 30, 0, 0.5) 2px;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .field {
+    padding-top: 16px;
+    font-size: small;
+  }
+  .buttons {
+    left: 0;
+    bottom: 0;
+  }
+  .create-btn,
+  .cancel-btn {
+    font-size: 15px;
+  }
+}

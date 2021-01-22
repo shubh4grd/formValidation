@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Validation Form</title>
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+	<body>
+		<h1 class="heading"> Assignment #1 </h1>
+		<form name="RegForm" action="#" onsubmit="return VALIDATION()">
+			<div class="field">
+				<label for="source">Select your source :</label>
+				<input class="place" name="source" type="text"
+					placeholder="Google Cloud Storage" id="source"
+					autocomplete="off" />
+				<br><span id="yoursource" class="msg"> </span>
+			</div>
+
+			<div class="field">
+				<label for="pname">Provide a name for pipeline :</label>
+				<input class="place" name="pname" type="text"
+					placeholder="e.g.,cust_shop_energy_gateway001" id="pname"
+					autocomplete="off" />
+				<br><span id="pipeline" class="msg"> </span>
+			</div>
+
+			<div class="field">
+				<label for="project">GCS project name : </label>
+				<input class="place" name="project" type="text" placeholder="project-id"
+					id="project"
+					autocomplete="off" />
+				<br><span id="gcs-pname" class="msg"> </span>
+			</div>
+
+			<div class="field">
+				<label for="bucketname">GCS bucket name :</label>
+				<input class="place" name="bucketname" type="text"
+					placeholder="gs://your-bucket"
+					id="bucketname"
+					autocomplete="off" />
+				<br><span id="gcs-bname" class="msg"> </span>
+			</div>
+
+			<div class="field">
+				<label for="storagefile">Input Cloud Storage File(s) : </label>
+				<input class="place" name="storagefile" type="text"
+					placeholder="GCS location of your files"
+					id="storagefile"
+					autocomplete="off" />
+				<br><span id="input file" class="msg"> </span>
+			</div>
+
+			<div class="field">
+				<label for="credentials">GCS credentials :</label>
+				<input class="place" name="credentials" type="text"
+					placeholder="Example:gs://your-bucket/your-files/01.csv"
+					id="credentials"
+					autocomplete="off" />
+				<br><span id="gcs-credential" class="msg"> </span>
+			</div>
+
+			<div class="field">
+				<label for="runevery">Run Every : </label>
+				<input class="place" name="runevery" type="text" placeholder="(in minutes)"
+					id="runevery"
+					autocomplete="off" />
+				<br><span id="run" class="msg"> </span>
+			</div>
+
+			<div class="buttons">
+				<input type="submit" value="Create" class="create-btn" name="Create" />
+				<input value="Cancel" type="button" class="cancel-btn" name="Cancel">
+			</div>
+		</form>
+		<script src="./index.js"></script>
+	</body>
+</html>
